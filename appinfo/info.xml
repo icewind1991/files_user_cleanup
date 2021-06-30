@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<info>
+	<id>files_user_cleanup</id>
+	<name>User file cleanup</name>
+	<summary>Allow cleanup of files of deleted users</summary>
+	<description><![CDATA[Allow cleanup of files of deleted users.
+
+Allows cleaning up files of users that have been deleted but didn't have their files removed`]]></description>
+	<version>0.1.0</version>
+	<licence>agpl</licence>
+	<author>Robin Appelman</author>
+	<namespace>FilesUserCleanup</namespace>
+	<types>
+		<filesystem/>
+	</types>
+
+	<category>files</category>
+
+	<website>https://github.com/icewind1991/files_user_cleanup</website>
+	<bugs>https://github.com/icewind1991/files_user_cleanup/issues</bugs>
+	<repository type="git">https://github.com/icewind1991/files_user_cleanup.git</repository>
+
+	<dependencies>
+		<nextcloud min-version="19" max-version="22" />
+	</dependencies>
+
+	<commands>
+		<command>OCA\FilesUserCleanup\Command\Cleanup</command>
+	</commands>
+</info>
